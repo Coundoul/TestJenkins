@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Dev') {
+            steps {
+                echo 'Partie Developpement'
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                echo 'Partie Testing'
+            }
+        }
+        
+        stage('Qualite') {
+            steps {
+                echo 'Partie Qualite de Code'
+            }
+        }
+        
+        stage('Deploy') {
+            steps {
+                echo 'Partie Production'
+            }
+        }
+    }
+}
